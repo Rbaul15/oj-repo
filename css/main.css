@@ -64,12 +64,14 @@ sup{
 
 /*SEARCHBAR*/
 .searchbox{
-	height: 35px;
+	/*height: 35px;*/
+	height: 80px;
 }
 
 .searchbar{
 	float: right;
 	margin-right: 60px;
+	height: 80px;
 }
 
 .search input{
@@ -87,15 +89,33 @@ sup{
 
 /*BANNER*/
 .banner{
-	margin: 0 auto;
+	width: 100%;
+	height: 450px;
+	text-align: center;
 }
 
-/*SECTION 1*/
 .image{
+	display: inline-block;
+}
+
+.section2{
+	display: inline-block;
+}
+
+
+
+/*.banner{
+	margin: 0 auto;
+	height: 450px;
+}*/
+
+/*SECTION 1*/
+/*.image{
 	float: left;
 	width: auto;
 	margin-left: 20%;
-}
+	position: relative;
+}*/
 
 .image img{
 	height: 250px;
@@ -104,13 +124,14 @@ sup{
 }
 
 /*SECTION 2*/
-.section2{
+/*.section2{
 	float: right;
 	width: auto;
 	margin-right: 20%;
 	height: 250px;
 	padding-top: 40px;
-}
+	position: relative;
+}*/
 
 .quote p{
 	padding: 40px 0;
@@ -157,10 +178,103 @@ span.web{
 
 /*FOOTER*/
 footer{
-	position: absolute;
 	height: 75px;
 	width: 100%;
 	background-color: #00CED1;
 	bottom: 0px;
 }
+
+/*MEDIA QUERIES*/
+@media(max-width: 771px){
+	.banner{
+		height: 650px;
+	}
+
+	.searchbox{
+		display: none;
+	}
+
+	.links .site li{
+		display: block;
+	}
+
+	.link .site ul{
+		display: inline-block;
+	}
+
+	.navbar{
+		height: 230px;
+		text-align: center;
+	}
+
+	.logo{
+		display: inline-block;
+		float: none;
+		padding-right: 45px;
+		padding-bottom: 10px;
+	}
+
+	.links{
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/*@media(max-width: 744px){
+	.searchbox{
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+
+	.searchbar{
+		float: none;
+		text-align: center;
+		display: block;
+		padding: 0;
+		margin: 0;
+		box-shadow: 1px 1px 1px black;
+	}
+
+	.searchbar form{
+		display: inline-block;
+		padding: auto;
+		margin: auto;
+		box-shadow: 1px 1px 1px black;
+	}
+
+	.search{
+		display: inline-block;
+	}
+
+	.links .site li{
+		display: block;
+	}
+
+	.link .site ul{
+		display: inline-block;
+	}
+
+	.navbar{
+		height: 230px;
+		text-align: center;
+	}
+
+	.logo{
+		display: inline-block;
+		float: none;
+		padding-right: 45px;
+		padding-bottom: 10px;
+	}
+
+	.links{
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+}*/
+
+
 
